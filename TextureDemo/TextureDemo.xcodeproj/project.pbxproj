@@ -3,25 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		632828512265C8B3005ABD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632828502265C8B3005ABD8C /* AppDelegate.swift */; };
-		632828532265C8B3005ABD8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632828522265C8B3005ABD8C /* ViewController.swift */; };
-		632828562265C8B3005ABD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632828542265C8B3005ABD8C /* Main.storyboard */; };
 		632828582265C8B4005ABD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632828572265C8B4005ABD8C /* Assets.xcassets */; };
 		6328285B2265C8B4005ABD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632828592265C8B4005ABD8C /* LaunchScreen.storyboard */; };
+		632828682265D39A005ABD8C /* TAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632828672265D39A005ABD8C /* TAMainVC.swift */; };
+		6328286C2265D5AD005ABD8C /* TAOverViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */; };
+		96B26022420B2811CCC30F59 /* Pods_TextureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080C161B9DA18F3BB41A3F91 /* Pods_TextureDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080C161B9DA18F3BB41A3F91 /* Pods_TextureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2374585B741C93C5C22FB648 /* Pods-TextureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6328284D2265C8B3005ABD8C /* TextureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632828502265C8B3005ABD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		632828522265C8B3005ABD8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		632828552265C8B3005ABD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632828572265C8B4005ABD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6328285A2265C8B4005ABD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6328285C2265C8B4005ABD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632828622265CACA005ABD8C /* TextureDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextureDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		632828672265D39A005ABD8C /* TAMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMainVC.swift; sourceTree = "<group>"; };
+		6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOverViewVC.swift; sourceTree = "<group>"; };
+		A962DAFF2241A1F5CF6010A0 /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B26022420B2811CCC30F59 /* Pods_TextureDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9561F040C6551DF9E4CE41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A962DAFF2241A1F5CF6010A0 /* Pods-TextureDemo.debug.xcconfig */,
+				2374585B741C93C5C22FB648 /* Pods-TextureDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		632828442265C8B3005ABD8C = {
 			isa = PBXGroup;
 			children = (
 				6328284F2265C8B3005ABD8C /* TextureDemo */,
 				6328284E2265C8B3005ABD8C /* Products */,
+				0F9561F040C6551DF9E4CE41 /* Pods */,
+				D7A996217AB46BC15C5D0767 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,39 @@
 		6328284F2265C8B3005ABD8C /* TextureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6328286A2265D565005ABD8C /* OverView */,
+				632828662265D307005ABD8C /* SupportingFiles */,
+			);
+			path = TextureDemo;
+			sourceTree = "<group>";
+		};
+		632828662265D307005ABD8C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				632828502265C8B3005ABD8C /* AppDelegate.swift */,
-				632828522265C8B3005ABD8C /* ViewController.swift */,
-				632828542265C8B3005ABD8C /* Main.storyboard */,
+				632828672265D39A005ABD8C /* TAMainVC.swift */,
 				632828572265C8B4005ABD8C /* Assets.xcassets */,
 				632828592265C8B4005ABD8C /* LaunchScreen.storyboard */,
 				6328285C2265C8B4005ABD8C /* Info.plist */,
+				632828622265CACA005ABD8C /* TextureDemo-Bridging-Header.h */,
 			);
-			path = TextureDemo;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6328286A2265D565005ABD8C /* OverView */ = {
+			isa = PBXGroup;
+			children = (
+				6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */,
+			);
+			path = OverView;
+			sourceTree = "<group>";
+		};
+		D7A996217AB46BC15C5D0767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				080C161B9DA18F3BB41A3F91 /* Pods_TextureDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6328285F2265C8B4005ABD8C /* Build configuration list for PBXNativeTarget "TextureDemo" */;
 			buildPhases = (
+				6F367B9BD122489EF768E714 /* [CP] Check Pods Manifest.lock */,
 				632828492265C8B3005ABD8C /* Sources */,
 				6328284A2265C8B3005ABD8C /* Frameworks */,
 				6328284B2265C8B3005ABD8C /* Resources */,
+				2AF656B54C9BFEFA1AB48275 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,17 +134,19 @@
 		632828452265C8B3005ABD8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TA;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = David;
+				ORGANIZATIONNAME = www.TabCen.com;
 				TargetAttributes = {
 					6328284C2265C8B3005ABD8C = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 632828482265C8B3005ABD8C /* Build configuration list for PBXProject "TextureDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -124,18 +170,63 @@
 			files = (
 				6328285B2265C8B4005ABD8C /* LaunchScreen.storyboard in Resources */,
 				632828582265C8B4005ABD8C /* Assets.xcassets in Resources */,
-				632828562265C8B3005ABD8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AF656B54C9BFEFA1AB48275 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F367B9BD122489EF768E714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		632828492265C8B3005ABD8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632828532265C8B3005ABD8C /* ViewController.swift in Sources */,
+				632828682265D39A005ABD8C /* TAMainVC.swift in Sources */,
+				6328286C2265D5AD005ABD8C /* TAOverViewVC.swift in Sources */,
 				632828512265C8B3005ABD8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +234,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		632828542265C8B3005ABD8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				632828552265C8B3005ABD8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		632828592265C8B4005ABD8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,8 +363,10 @@
 		};
 		632828602265C8B4005ABD8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A962DAFF2241A1F5CF6010A0 /* Pods-TextureDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AB6CHCEM2;
 				INFOPLIST_FILE = TextureDemo/Info.plist;
@@ -291,6 +376,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huzhoumengqi.TextureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureDemo/TextureDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +385,10 @@
 		};
 		632828612265C8B4005ABD8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2374585B741C93C5C22FB648 /* Pods-TextureDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AB6CHCEM2;
 				INFOPLIST_FILE = TextureDemo/Info.plist;
@@ -309,6 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huzhoumengqi.TextureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TextureDemo/TextureDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
