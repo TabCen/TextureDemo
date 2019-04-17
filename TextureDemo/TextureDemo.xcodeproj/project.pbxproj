@@ -10,9 +10,11 @@
 		632828512265C8B3005ABD8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632828502265C8B3005ABD8C /* AppDelegate.swift */; };
 		632828582265C8B4005ABD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632828572265C8B4005ABD8C /* Assets.xcassets */; };
 		6328285B2265C8B4005ABD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632828592265C8B4005ABD8C /* LaunchScreen.storyboard */; };
-		632828682265D39A005ABD8C /* TAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632828672265D39A005ABD8C /* TAMainVC.swift */; };
 		6328286C2265D5AD005ABD8C /* TAOverViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */; };
 		96B26022420B2811CCC30F59 /* Pods_TextureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080C161B9DA18F3BB41A3F91 /* Pods_TextureDemo.framework */; };
+		9FA123282266D2FC009BB841 /* TAProjectMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA123272266D2FC009BB841 /* TAProjectMainVC.swift */; };
+		9FB73ED22266D3BA003F642B /* TAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73ED12266D3BA003F642B /* TAMainVC.swift */; };
+		9FB73ED42266D449003F642B /* TAMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73ED32266D449003F642B /* TAMineVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		6328285A2265C8B4005ABD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6328285C2265C8B4005ABD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632828622265CACA005ABD8C /* TextureDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextureDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		632828672265D39A005ABD8C /* TAMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMainVC.swift; sourceTree = "<group>"; };
 		6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOverViewVC.swift; sourceTree = "<group>"; };
+		9FA123272266D2FC009BB841 /* TAProjectMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAProjectMainVC.swift; sourceTree = "<group>"; };
+		9FB73ED12266D3BA003F642B /* TAMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAMainVC.swift; sourceTree = "<group>"; };
+		9FB73ED32266D449003F642B /* TAMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineVC.swift; sourceTree = "<group>"; };
 		A962DAFF2241A1F5CF6010A0 /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,8 @@
 		6328284F2265C8B3005ABD8C /* TextureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9FA123242266D20F009BB841 /* project */,
+				9FA123232266D201009BB841 /* Mine */,
 				6328286A2265D565005ABD8C /* OverView */,
 				632828662265D307005ABD8C /* SupportingFiles */,
 			);
@@ -80,8 +86,8 @@
 		632828662265D307005ABD8C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				9FB73ED12266D3BA003F642B /* TAMainVC.swift */,
 				632828502265C8B3005ABD8C /* AppDelegate.swift */,
-				632828672265D39A005ABD8C /* TAMainVC.swift */,
 				632828572265C8B4005ABD8C /* Assets.xcassets */,
 				632828592265C8B4005ABD8C /* LaunchScreen.storyboard */,
 				6328285C2265C8B4005ABD8C /* Info.plist */,
@@ -96,6 +102,22 @@
 				6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */,
 			);
 			path = OverView;
+			sourceTree = "<group>";
+		};
+		9FA123232266D201009BB841 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9FB73ED32266D449003F642B /* TAMineVC.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		9FA123242266D20F009BB841 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				9FA123272266D2FC009BB841 /* TAProjectMainVC.swift */,
+			);
+			path = project;
 			sourceTree = "<group>";
 		};
 		D7A996217AB46BC15C5D0767 /* Frameworks */ = {
@@ -225,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632828682265D39A005ABD8C /* TAMainVC.swift in Sources */,
+				9FB73ED42266D449003F642B /* TAMineVC.swift in Sources */,
+				9FB73ED22266D3BA003F642B /* TAMainVC.swift in Sources */,
 				6328286C2265D5AD005ABD8C /* TAOverViewVC.swift in Sources */,
+				9FA123282266D2FC009BB841 /* TAProjectMainVC.swift in Sources */,
 				632828512265C8B3005ABD8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

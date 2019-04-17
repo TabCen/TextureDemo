@@ -13,10 +13,16 @@ class TAMainVC: ASTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nav = ASNavigationController.init(rootViewController: TAOverViewVC.init())
-        nav.tabBarItem.title = "展示"
+        let nav1 = ASNavigationController.init(rootViewController: TAOverViewVC.init())
+        nav1.tabBarItem.title = "技术"
         
-        self.viewControllers = [nav]
+        let nav2 = ASNavigationController.init(rootViewController: TAProjectMainVC.init())
+        nav2.tabBarItem.title = "项目"
+        
+        let nav3 = ASNavigationController.init(rootViewController: TAMineVC.init())
+        nav3.tabBarItem.title = "我的"
+        
+        self.viewControllers = [nav1,nav2,nav3]
     }
     
 
