@@ -9,5 +9,11 @@
 import UIKit
 
 class TANormalNode: ASDisplayNode {
-
+    
+    override init() {
+        super.init()
+        automaticallyManagesSubnodes = true
+    }
+    
+    
 }
