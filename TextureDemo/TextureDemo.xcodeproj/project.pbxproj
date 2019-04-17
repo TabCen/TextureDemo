@@ -15,6 +15,8 @@
 		9FA123282266D2FC009BB841 /* TAProjectMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA123272266D2FC009BB841 /* TAProjectMainVC.swift */; };
 		9FB73ED22266D3BA003F642B /* TAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73ED12266D3BA003F642B /* TAMainVC.swift */; };
 		9FB73ED42266D449003F642B /* TAMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73ED32266D449003F642B /* TAMineVC.swift */; };
+		9FB73EDC226722D6003F642B /* TANormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73EDB226722D6003F642B /* TANormalVC.swift */; };
+		9FB73EDE2267230F003F642B /* TANormalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB73EDD2267230F003F642B /* TANormalNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9FA123272266D2FC009BB841 /* TAProjectMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAProjectMainVC.swift; sourceTree = "<group>"; };
 		9FB73ED12266D3BA003F642B /* TAMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAMainVC.swift; sourceTree = "<group>"; };
 		9FB73ED32266D449003F642B /* TAMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineVC.swift; sourceTree = "<group>"; };
+		9FB73EDB226722D6003F642B /* TANormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TANormalVC.swift; sourceTree = "<group>"; };
+		9FB73EDD2267230F003F642B /* TANormalNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TANormalNode.swift; sourceTree = "<group>"; };
 		A962DAFF2241A1F5CF6010A0 /* Pods-TextureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextureDemo/Pods-TextureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				6328286B2265D5AD005ABD8C /* TAOverViewVC.swift */,
+				9FB73EDB226722D6003F642B /* TANormalVC.swift */,
+				9FB73EDD2267230F003F642B /* TANormalNode.swift */,
 			);
 			path = OverView;
 			sourceTree = "<group>";
@@ -247,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB73EDC226722D6003F642B /* TANormalVC.swift in Sources */,
 				9FB73ED42266D449003F642B /* TAMineVC.swift in Sources */,
 				9FB73ED22266D3BA003F642B /* TAMainVC.swift in Sources */,
 				6328286C2265D5AD005ABD8C /* TAOverViewVC.swift in Sources */,
+				9FB73EDE2267230F003F642B /* TANormalNode.swift in Sources */,
 				9FA123282266D2FC009BB841 /* TAProjectMainVC.swift in Sources */,
 				632828512265C8B3005ABD8C /* AppDelegate.swift in Sources */,
 			);

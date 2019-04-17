@@ -21,7 +21,9 @@ struct GroupModel {
 
 let group1 = [CellModel.init(title: "ASDisplayNode", clickBlock: {(vc: TAOverViewVC?) -> Void in
     if let vc = vc {
-        
+        let forNodeVC = TANormalVC.init()
+        forNodeVC.hidesBottomBarWhenPushed = true
+        vc.navigationController?.pushViewController(forNodeVC, animated: true)
     }
 })]
 
